@@ -132,6 +132,7 @@ def crawl(seed_url: str = SEED_URL) -> list[dict]:
         soup = BeautifulSoup(response.text, "html.parser")
         text = extract_text(soup)
         pages.append({"url": url, "text": text})
+        print(f"Crawling page {len(pages)}: {url}")
 
         # ── Discover new links ───────────────────────────────────────
         for link in extract_links(soup, url):
