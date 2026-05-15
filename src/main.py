@@ -49,6 +49,9 @@ def main():
             if not args:
                 print("Usage: print <word>")
                 continue
+            if len(args) > 1:
+                print("Usage: print <word>")
+                continue
             if index is None:
                 print("Error: No index loaded. Run 'build' or 'load' first.")
                 continue
