@@ -6,10 +6,15 @@ known, calculable expected values).  No disk I/O or network calls.
 """
 
 import math
+import os
+import sys
 
 import pytest
 
-from src.search import compute_tfidf, print_word, search_and, search_or, suggest
+# Ensure the src package is importable when running from the repo root.
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
+
+from search import compute_tfidf, print_word, search_and, search_or, suggest
 
 
 # ── Fixtures ─────────────────────────────────────────────────────────────────
