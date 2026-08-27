@@ -2,8 +2,6 @@
 
 A command-line search engine built in Python that crawls [quotes.toscrape.com](https://quotes.toscrape.com/), builds an inverted index, and allows interactive querying with TF-IDF ranked results.
 
-Built for COMP3011 Web Services and Web Data — Coursework 2.
-
 ---
 
 ## Table of Contents
