@@ -35,8 +35,6 @@ This tool implements a three-stage search engine pipeline:
 ## Repository Structure
 
 ```
-COMP3011-search-engine/
-│
 ├── src/
 │   ├── crawler.py       # BFS crawler with politeness window
 │   ├── indexer.py       # Inverted index builder and JSON persistence
@@ -72,7 +70,7 @@ No additional parser installation is needed — the crawler uses Python's built-
 
 ```bash
 git clone <your-repository-url>
-cd COMP3011-search-engine
+cd Search-Engine
 ```
 
 **2. (Recommended) Create and activate a virtual environment**
